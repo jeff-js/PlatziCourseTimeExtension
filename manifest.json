@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Platzi Course Time",
+    "version": "1.0.0",
+    "icons": {
+        "16": "src/img/logo.png",
+        "48": "src/img/logo.png",
+        "128": "src/img/logo.png"
+    },
+    "permissions": ["activeTab"],
+    "browser_action": {
+        "default_title": "Platzi Course Time",
+        "default_popup": "src/index.html"
+    }
+}

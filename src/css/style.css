@@ -1,0 +1,18 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 300px;
+    text-align: center;
+}
+.header {
+    display: grid;
+    grid-template-columns: 30px auto;
+    align-items: center;
+}
+img {
+    width: 25px;
+}
+span {
+    font-size: 20px;
+}
