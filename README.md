@@ -12,10 +12,10 @@ https://chrome.google.com/webstore/detail/platzi-course-time/fljjoemlfjkpnneocih
 
 ***
 
-##Contribute
+## Contribute
 If someone wants to add or improve something, they are invited to collaborate directly in this repository
 
 ***
-##License
+## License
 
 Platzi Course Time is released under the MIT license.
