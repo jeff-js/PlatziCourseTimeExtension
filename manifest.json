@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Platzi Course Time",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "icons": {
         "16": "src/img/logo.png",
         "48": "src/img/logo.png",
