@@ -15,7 +15,7 @@ figure {
 .header {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 10px 16px;
 }
 
 .logoImg  img {
