@@ -1,32 +1,32 @@
-function toSeconds({ hours = 0, minutes = 0, seconds = 0 }) {
-    return hours * 3600 + minutes * 60 + seconds;
-}
-
-function secondsToHM(totalSeconds = 0) {
-    const seconds = totalSeconds % 60;
-    const minutesAux = parseInt(totalSeconds / 60);
-    const minutes = minutesAux % 60;
-    const hours = parseInt(minutesAux / 60);
-    return { hours, minutes, seconds }
-}
-
-function getMaterialContentTime(htmlElements) {
-    const hours = 0;
-    let minutes = 0;
-    let seconds = 0;
-    for (const item of htmlElements) {
-      minutes += parseInt(item.innerText.slice(0,2));
-      seconds += parseInt(item.innerText.slice(3,5));
-    }
-    return { hours, minutes, seconds } 
-}
-
 function getDurationCourse() {
     const classTotalItems = 'MaterialItem-copy';
     const classTotalTimes = 'MaterialItem-copy-time';
     const classWatched = 'icon-eye-slash';
     const classTitle = 'CourseDetail-left-title';
     const classImg = 'CourseDetail-left-figure';
+
+    function toSeconds({ hours = 0, minutes = 0, seconds = 0 }) {
+        return hours * 3600 + minutes * 60 + seconds;
+    }
+
+    function secondsToHM(totalSeconds = 0) {
+        const seconds = totalSeconds % 60;
+        const minutesAux = parseInt(totalSeconds / 60);
+        const minutes = minutesAux % 60;
+        const hours = parseInt(minutesAux / 60);
+        return { hours, minutes, seconds }
+    }
+
+    function getMaterialContentTime(htmlElements) {
+        const hours = 0;
+        let minutes = 0;
+        let seconds = 0;
+        for (const item of htmlElements) {
+          minutes += parseInt(item.innerText.slice(0,2));
+          seconds += parseInt(item.innerText.slice(3,5));
+        }
+        return { hours, minutes, seconds } 
+    }
 
     try {
         const classMaterial = document.getElementsByClassName(classTotalItems);
